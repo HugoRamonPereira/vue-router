@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <router-link to='/teams'>Teams</router-link>
+          <RouterLink to='/teams'>Teams</RouterLink>
         </li>
         <li>
-          <router-link to='/users'>Users</router-link>
+          <RouterLink to='/users'>Users</RouterLink>
         </li>
       </ul>
     </nav>
@@ -49,7 +49,8 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+a.router-link-active {
   color: #f1a80a;
   border-color: #f1a80a;
   background-color: #1a037e;

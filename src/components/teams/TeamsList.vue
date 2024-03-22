@@ -1,4 +1,5 @@
 <template>
+  <RouterView />
   <ul>
     <TeamsItem v-for="team in teams" :key="team.id" :id='team.id' :name="team.name"
       :member-count="team.members.length" />

@@ -3,6 +3,7 @@ import {
   createWebHistory
 } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import NotFound from '@/views/NotFound.vue'
 import TeamsList from '@/components/teams/TeamsList.vue'
 import UsersList from '@/components/users/UsersList.vue'
 import TeamMembers from '@/components/teams/TeamMembers.vue'
@@ -30,6 +31,11 @@ const router = createRouter({
       name: 'teams/id',
       component: TeamMembers,
       props: true
+    },
+    {
+      path: '/:notFound(.*)',
+      name: 'not-found',
+      component: NotFound
     }
   ]
 })
